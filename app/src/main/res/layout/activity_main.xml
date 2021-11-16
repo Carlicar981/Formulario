@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <androidx.constraintlayout.widget.ConstraintLayout tools:context=".MainActivity" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="4dp"
+        android:onClick="enviarMensaje"
+        android:text="Mensaje"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/entradaTexto"
+        android:layout_width="192dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Escribe tu nombre:"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/miBoton"
+        android:layout_width="207dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="168dp"
+        android:text="Enviar"
+        app:layout_constraintEnd_toEndOf="@+id/entradaTexto"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/entradaTexto"
+        app:layout_constraintTop_toBottomOf="@+id/entradaTexto" />
+
+    <Spinner
+        android:id="@+id/seleccion"
+        android:layout_width="207dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="96dp"
+        app:layout_constraintEnd_toEndOf="@+id/entradaTexto"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/entradaTexto"
+        app:layout_constraintTop_toBottomOf="@+id/entradaTexto" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="111dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="128dp"
+        android:text="Seguro"
+        app:layout_constraintEnd_toEndOf="@+id/entradaTexto"
+        app:layout_constraintHorizontal_bias="0.679"
+        app:layout_constraintStart_toStartOf="@+id/entradaTexto"
+        app:layout_constraintTop_toBottomOf="@+id/entradaTexto" />
+
+    <TextView
+        android:id="@+id/salidaTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@color/white"
+        android:backgroundTint="#FFFFFF"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/miBoton"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="@+id/miBoton"
+        app:layout_constraintTop_toBottomOf="@+id/miBoton" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="210dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:max="4"
+        android:progress="0"
+        app:layout_constraintEnd_toEndOf="@+id/miBoton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/miBoton"
+        app:layout_constraintTop_toBottomOf="@+id/entradaTexto2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar2"
+        app:layout_constraintEnd_toEndOf="@+id/seekBar2"
+        app:layout_constraintStart_toStartOf="@+id/seekBar2"
+        app:layout_constraintTop_toBottomOf="@+id/entradaTexto2" />
+
+    <EditText
+        android:id="@+id/entradaTexto2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Apellidos:"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/entradaTexto"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entradaTexto" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACERCA DE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="4dp"
+        android:onClick="llamar112"
+        android:text="112"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

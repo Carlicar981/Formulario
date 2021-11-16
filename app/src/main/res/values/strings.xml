@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Formulario</string>
+    <string name="selecion1">Delantero</string>
+    <string name="selecion2">Centrocampista</string>
+    <string name="selecion3">Defensa</string>
+    <string name="selecion4">Portero</string>
+</resources>
